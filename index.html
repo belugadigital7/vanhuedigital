@@ -36,7 +36,73 @@ footer{padding:40px 8%;text-align:center;background:#05070c;font-size:14px;opaci
 <a href="https://wa.me/918297908974?text=Hello%20I%20need%20digital%20marketing%20services">
 Chat on WhatsApp
 </a>
-<header>
+<style>
+#whatsapp-chat {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-family: Arial, sans-serif;
+}
+
+#whatsapp-chat-button {
+  background: #25D366;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#whatsapp-popup {
+  display: none;
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+  width: 260px;
+  background: white;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  padding: 15px;
+}
+
+#whatsapp-popup a {
+  display: block;
+  margin-top: 10px;
+  background: #25D366;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+</style>
+
+<div id="whatsapp-chat">
+  <div id="whatsapp-popup">
+    <strong>Chat with us</strong>
+    <p>Need help with digital marketing?</p>
+    <a href="https://wa.me/918297908974?text=Hello%20I%20need%20digital%20marketing%20services" target="_blank">
+      Start WhatsApp Chat
+    </a>
+  </div>
+
+  <div id="whatsapp-chat-button" onclick="toggleChat()">
+    WhatsApp
+  </div>
+</div>
+
+<script>
+function toggleChat() {
+  var popup = document.getElementById("whatsapp-popup");
+  if (popup.style.display === "block") {
+    popup.style.display = "none";
+  } else {
+    popup.style.display = "block";
+  }
+}
+</script>
+ <header>
 <h2>Vanhue Digital</h2>
 <nav>
 <a href="#">Home</a>
